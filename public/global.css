@@ -5,7 +5,10 @@ html, body {
 }
 
 body {
-	color: #333;
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO_MWDPq6waHychutekIFta8z6BTjJrO_mhg&usqp=CAU");
+	background-repeat: no-repeat;
+ 	background-size: cover;
+	color: white;
 	margin: 0;
 	padding: 8px;
 	box-sizing: border-box;
@@ -13,16 +16,13 @@ body {
 }
 
 a {
-	color: rgb(0,100,200);
+	color: white;
 	text-decoration: none;
+	font-style: oblique;
 }
 
 a:hover {
-	text-decoration: underline;
-}
-
-a:visited {
-	color: rgb(0,80,160);
+	text-shadow: 0 0 5px cyan;
 }
 
 label {

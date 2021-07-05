@@ -1,5 +1,5 @@
 <script>
-	export let name;
+	export let name = 'people';
 </script>
 
 <main>
@@ -9,6 +9,8 @@
 
 <style>
 	main {
+		border-radius: 0 0 5vh 5vh;
+		box-shadow: 0 0 40vw 1vw cyan;
 		text-align: center;
 		padding: 1em;
 		max-width: 240px;
@@ -16,10 +18,12 @@
 	}
 
 	h1 {
-		color: #0000ff;
+		opacity: 100%;
+		color: white;
 		text-transform: uppercase;
 		font-size: 4em;
-		font-weight: 100;
+		font-weight: 300;
+		text-shadow: 0 0 30px cyan;
 	}
 
 	@media (min-width: 640px) {
