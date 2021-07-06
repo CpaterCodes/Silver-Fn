@@ -3,6 +3,5 @@ import { render } from '@testing-library/svelte';
 
 it('Says something electrifying', () => {
   const app = render(App);
-  const message = app.getByText("Let's rock, people!");
-  expect(message).toBeInTheDocument();
+  expect(app.getByText("Let's rock, people!"));
 });
