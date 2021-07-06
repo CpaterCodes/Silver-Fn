@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   export let foo = 'bar';
 </script>
 
@@ -9,5 +9,7 @@
 <style>
   #grid-body {
     border-style: solid;
+    border-color: white;
+    width: 95vw;
   }
 </style>

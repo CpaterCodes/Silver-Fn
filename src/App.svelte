@@ -1,11 +1,14 @@
 <script lang="ts">
 	export let name = 'people';
+	import Panel from "./Panel.svelte";
+
 </script>
 
 <header>
 	<h1>Let's rock, {name}!</h1>
 	<p>Visit the <a href="https://svelte.dev/tutorial">tutorial</a> to learn what I'm using for this! </p>
 </header>
+
 
 <style>
 	header {
