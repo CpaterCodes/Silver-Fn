@@ -8,6 +8,7 @@
 	<h1>Let's rock, {name}!</h1>
 	<p>Visit the <a href="https://svelte.dev/tutorial">tutorial</a> to learn what I'm using for this! </p>
 </header>
+<Grid/>
 
 <style>
 	header {
