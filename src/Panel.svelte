@@ -3,16 +3,14 @@
   export let species: string;
   export let name: string;
   export let img: string;
-
-  const scientific_name = genus.concat(' ', species);
 </script>
 
 <div class="species-panel">
   <img src={img}/>
   <footer>
-  {name}
-  ({scientific_name})
-</footer>
+    {name}
+    <i>{genus + ' ' + species}</i>
+  </footer>
 </div>
 
 <style>

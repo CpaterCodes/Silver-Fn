@@ -1,6 +1,6 @@
 <script lang="ts">
 	export let name = 'people';
-	import Panel from "./Panel.svelte";
+	import Grid from "./Grid.svelte";
 
 </script>
 

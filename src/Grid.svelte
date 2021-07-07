@@ -1,5 +1,6 @@
 <script lang="ts">
   export let foo = 'bar';
+  import Panel from './Panel.svelte';
 </script>
 
 <section id="grid-body">

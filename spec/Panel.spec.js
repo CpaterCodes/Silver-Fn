@@ -8,6 +8,6 @@ it('Will present a spread of information in a clear format', () => {
     name: "Atlantic Cod",
     img: "./assets/cod.jpg"
   });
-  expect(panel.getByText('Gadus Morhua'));
-  expect(panel.getByText('Atlantic Cod'));
+  expect(panel.getByText(/Atlantic Cod/i));
+  expect(panel.getByText(/Gadus Morhua/i));
 });
