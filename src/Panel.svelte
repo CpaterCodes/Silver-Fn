@@ -9,7 +9,7 @@
   <img src={img}/>
   <footer>
     {name}
-    <i>{genus + ' ' + species}</i>
+    <i>{'[' + genus + ' ' + species + ']'}</i>
   </footer>
 </div>
 
