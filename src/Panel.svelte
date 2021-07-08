@@ -6,9 +6,9 @@
 </script>
 
 <div class="species-panel">
-  <img src={img}/>
+  <img src={img} alt={'This is ' + genus + ' ' + species + ', ' + 'the ' + name}/>
   <footer>
-    {name}
+    {name}<br/>
     <i>{'[' + genus + ' ' + species + ']'}</i>
   </footer>
 </div>
@@ -25,10 +25,12 @@
     align-items: center;
     box-shadow: 0 0 20px 0 cyan;
     margin: 10px;
+    padding: 0;
   }
 
   img {
     width: 100%;
+    height: 60%;
     border-radius: 10px 10px 0 0 ;
     border-bottom-color: inherit;
     border-bottom-style: solid;
