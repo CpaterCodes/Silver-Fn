@@ -39,5 +39,6 @@
   footer {
     width: 70%;
     text-align: center;
+    overflow: auto;
   }
 </style>

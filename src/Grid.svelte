@@ -21,7 +21,7 @@
   };
 
   const setFish = async () : Promise<void> => {
-    if(allFish.length === 3) { allFish = allFish.slice(1); }
+    if(allFish.length === 6) { allFish = allFish.slice(1); }
     allFish = allFish.concat(await getFish());
   };
 </script>
@@ -36,13 +36,14 @@
 <style>
   #grid-body {
     display: flex;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
     border-style: solid;
     border-radius: 10px;
     border-color: white;
-    overflow-x: scroll;
+    overflow: auto;
     padding: 0;
-    width: 78vw;
+    min-width: 500px;
     margin: auto;
     margin-top: 3vh;
   }
