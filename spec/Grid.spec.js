@@ -10,10 +10,11 @@ it('will take information and make a grid of it', async () => {
   .mockReturnValueOnce(sandeel);
 
   const grid = await render(Grid, { getFish: mockFish });
-  fireEvent.click(grid.getByRole('button'));
-  expect(mockFish).toHaveBeenCalled();
-  // 
-  // expect(await grid.findByText(/Red Grouper/i));
-  // expect(await grid.findByText(/Geelbeck Croaker/i));
-  // expect(await grid.findByText(/Small Sandeel/i));
+  const button = await grid.findByRole('button');
+  fireEvent.click(button);
+  expect(await grid.findByText(/Red Grouper/i));
+  fireEvent.click(button);
+  expect(await grid.findByText(/Geelbeck Croaker/i));
+  fireEvent.click(button);
+  expect(await grid.findByText(/Small Sandeel/i));
 });
