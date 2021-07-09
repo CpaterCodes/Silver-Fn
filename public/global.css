@@ -22,15 +22,11 @@ a {
 	font-style: oblique;
 }
 
-a:hover {
-	text-shadow: 0 0 10px cyan;
-}
-
 label {
 	display: block;
 }
 
-input, button, select, textarea {
+/* input, button, select, textarea {
 	font-family: inherit;
 	font-size: inherit;
 	-webkit-padding: 0.4em 0;
@@ -39,7 +35,7 @@ input, button, select, textarea {
 	box-sizing: border-box;
 	border: 1px solid #ccc;
 	border-radius: 2px;
-}
+} */
 
 input:disabled {
 	color: #ccc;

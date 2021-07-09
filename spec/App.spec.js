@@ -1,7 +1,7 @@
 import App from '../src/App.svelte';
 import { render } from '@testing-library/svelte';
 
-it('Says something electrifying', () => {
+it('Introduces the application', () => {
   const app = render(App);
-  expect(app.getByText("Let's rock, people!"));
+  expect(app.getByText(/Silver-Fn/i));
 });

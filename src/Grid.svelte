@@ -25,15 +25,35 @@
     allFish = allFish.concat(await getFish());
   };
 </script>
-
-<button on:click={setFish}>Go Fish! </button>
-<section id="grid-body">
-  {#each allFish as fish}
-  <Panel {...fish} />
-  {/each}
-</section>
+<div id="grid-wrapper">
+  <button on:click={setFish}>Go Fish! </button>
+  <main id="grid-body">
+    {#each allFish as fish}
+    <Panel {...fish} />
+    {/each}
+  </main>
+</div>
 
 <style>
+
+  #grid-wrapper {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    background-color: transparent;
+    color: white;
+    text-shadow: 0 0 40vw 1vw cyan;
+    font-weight: 600;
+    border-style: solid;
+    border-color: white;
+    border-radius: 0 0 10px 10px;
+    min-height: 50px;
+    min-width: 150px;
+  }
+
   #grid-body {
     display: flex;
     flex-wrap: wrap;
@@ -41,17 +61,10 @@
     border-style: solid;
     border-radius: 10px;
     border-color: white;
-    overflow: auto;
     padding: 0;
-    min-width: 500px;
+    min-width: 100%;
+    min-height: 230px;
     margin: auto;
     margin-top: 3vh;
-  }
-
-  button{
-    margin-left: 40%;
-    margin-top: 0;
-    margin-bottom: 0;
-    width: 30vw;
   }
 </style>
