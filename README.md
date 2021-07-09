@@ -5,7 +5,7 @@ This application is based on the svelte app template, at https://github.com/svel
 ### Rationale
 
 I was recently made aware of the [SvelteJS](https://svelte.dev/) framework, which works
-by precompiling Svelte compoments into pure JS before runtime.
+by precompiling Svelte components into pure JS before runtime.
 Curious about this younger and lesser known framework, I decided to follow the
 tutorial to learn more. In order to apply the framework to a tangible project,
 I once again wanted to incorporate my interest in the natural world while
