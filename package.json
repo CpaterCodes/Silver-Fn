@@ -12,12 +12,12 @@
     "transform": {
       "^.+\\.js$": "babel-jest",
       "^.+\\.svelte$": [
-      "svelte-jester",
-      {
-        "preprocess": true
-      }
-    ],
-    "^.+\\.ts$": "ts-jest"
+        "svelte-jester",
+        {
+          "preprocess": true
+        }
+      ],
+      "^.+\\.ts$": "ts-jest"
     },
     "moduleFileExtensions": [
       "js",
@@ -52,6 +52,7 @@
   },
   "dependencies": {
     "@types/jest": "^26.0.23",
+    "apisauce": "^2.1.2",
     "sirv-cli": "^1.0.0"
   }
 }
