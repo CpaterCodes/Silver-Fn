@@ -12,7 +12,7 @@ const api = create({
   baseURL: 'https://fishbase.ropensci.org/species'
 });
 
-export const getFish = async () : Promise<Fish> => {
+export const newFish = async () : Promise<Fish> => {
   const Id = Math.floor(Math.random() * 13000) + 1;
   console.log(`Attempting to retrieve fish record ${Id} from FishBase`);
   const fishRecord = await api.get(`/${Id}?`);

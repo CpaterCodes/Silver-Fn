@@ -4,5 +4,5 @@ export const croaker: Fish = {
   genus: "Atractoscion",
   species: "aequidens",
   name: "Geelbeck Croaker",
-  img: "croaker.jpg"
+  img: "../src/assets/croaker.jpg"
 }

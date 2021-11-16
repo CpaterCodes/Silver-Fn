@@ -1,7 +1,7 @@
-import { getFish } from '../../src/typescripts/fishUtils';
+import { newFish } from '../../src/typescripts/fishUtils';
 
 it('Can retrieve a fish', () => {
-  const fish = getFish();
+  const fish = newFish();
   expect(fish.genus);
   expect(fish.species);
   expect(fish.name);
